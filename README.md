@@ -175,7 +175,10 @@ $ docker run -d \
 
 * The "com.github.jrcs.letsencrypt_nginx_proxy_companion.docker_gen" label - set this label on the docker-gen container to tell the docker-letsencrypt-nginx-proxy-companion container to use it as the docker-gen when it's split from nginx (separate containers).
 
-* `ACME_TOS_HASH` - Let´s you pass an alternative TOS hash to simp_le, to support other CA´s ACME implentation.
+* `ACME_TOS_HASH` - Let´s you pass an alternative TOS hash to simp_le, to support other CA´s ACME implentation. When ever you encounter the folowing error in logs.
+  ```
+  TOS hash mismatch. Found: f33c27745f2bd87344be790465ef984a972fd539dc83bd4f61d4242c607ef1ee.
+  ```
 
 #### Examples:
 
